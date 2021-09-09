@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "adaled"
+version = "0.1"
+authors = [
+  { name="Ivica Kičić", email="ivicakicic@gmail.com" },
+]
+description = "Adaptive Learning of Effective Dynamics"
+readme = "README.rst"
+requires-python = ">=3.9"
+# "License :: OSI Approved :: MIT License",
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cselab/adaled"
+"Bug Tracker" = "https://github.com/cselab/adaled/issues"
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "/adaled/*",
+]
